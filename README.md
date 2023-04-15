@@ -12,7 +12,7 @@ EFI Partition and Guidelines for my Mini-ITX Hackintosh
 - YESTON RX6800XT-16GD6
 - 2xWD Black SN750 1TB NVMe
 - USCORSAIR SF750W
-- DW1820a WiFi/BT
+- Broadcom BCM943602CS WiFi/BT
 
 ## Config
 
@@ -23,24 +23,9 @@ EFI Partition and Guidelines for my Mini-ITX Hackintosh
 
 ## Bios
 
-- CFG-Lock - off
-- Fast Boot - off
-- VT-d - off
-- CSM - off
-- VT-x - on
+- VT-d - on
 - Above 4G decoding - on
-- Re-Size BAR Support - on
 - XHCI Hand-off - on
-
-## Overclocking
-
-- VCore: Fixed 1.28V
-- DVID: -0.045
-- LLC: 3
-- P 0-1: 50
-- P 2-7: 49
-- E 0-3: 39
-
 
 ## Changelog
 
