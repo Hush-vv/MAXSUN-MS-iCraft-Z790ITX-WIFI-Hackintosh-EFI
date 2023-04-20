@@ -25,11 +25,13 @@ EFI Partition and Guidelines for my Mini-ITX Hackintosh
 
 - VT-d - on
 - Above 4G decoding - on
-- XHCI Hand-off - on
+- CFG Lock - off
 
 ## Changelog
 
 ```
+
+0.2.0 - Customized USB port
 
 0.1.1 - initial release
 
