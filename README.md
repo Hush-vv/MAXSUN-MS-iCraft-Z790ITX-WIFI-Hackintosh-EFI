@@ -28,6 +28,59 @@ EFI Partition and Guidelines for my Mini-ITX Hackintosh
 - Intel（VMX）- Enabled
 - CFG Lock - Disabled
 
+<details>
+<summary><strong>EFI file content</strong></summary>
+
+## EFI file content
+
+```
+EFI
+├── BOOT
+│   └── BOOTx64.efi
+└── OC
+    ├── ACPI
+    │   ├── SSDT-MS-iCraftZ790ITX.aml (MS iCraft Z790ITX WIFI dedicated ssdt)
+    │   ├── SSDT-DTGP.aml
+    │   └── SSDT-AMD Radeon Pro W6800X.aml (Activate Type-C port on graphics card and rename graphics card)
+    ├── Drivers
+    │   ├── HfsPlus.efi
+    │   ├── OpenCanopy.efi
+    │   ├── OpenHfsPlus.efi
+    │   ├── OpenRuntime.efi
+    │   ├── ResetNvramEntry.efi  
+    │   └── ToggleSipEntry.efi
+    ├── Kexts
+    │   ├── AGPMInjector.kext
+    │   ├── AppleALC.kext
+    │   ├── CPUFriend.kext    
+    │   ├── CPUFriendDataProvider.kext    -Disabled(HWP has been customized using SSDT and does not need to be enabled)
+    │   ├── CpuTopologyRebuild.kext    
+    │   ├── CpuTscSync.kext    -Disabled
+    │   ├── Lilu.kext
+    │   ├── LucyRTL8125Ethernet.kext
+    │   ├── RadeonSensor.kext
+    │   │   └── Contents
+    │   │       └── PlugIns
+    │   │           └── SMCRadeonGPU.kext 
+    │   ├── RestrictEvents.kext
+    │   ├── SMCProcessor.kext
+    │   ├── SMCSuperIO.kext
+    │   ├── USBMap.kext
+    │   ├── VirtualSMC.kext
+    │   └── WhateverGreen.kext
+    ├── OpenCore.efi
+    ├── Resources 
+    │   ├── Audio
+    │   ├── Font
+    │   ├── Image
+    │   └── Label
+    ├── Tools
+    │   ├── CleanNvram.efi 
+    │   └── OpenShell.efi
+    └── config.plist
+```
+</details>
+
 ## Changelog
 
 ```
