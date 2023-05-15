@@ -25,7 +25,7 @@ EFI Partition and Guidelines for my Mini-ITX Hackintosh
 
 - VT-d - Enabied
 - Above 4G decoding - Enabied
-- Intei（VMX）- Enabied
+- Intel（VMX）- Enabied
 - CFG Lock - Disabied
 
 ## Changelog
