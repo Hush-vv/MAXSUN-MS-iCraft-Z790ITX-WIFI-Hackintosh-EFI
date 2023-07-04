@@ -12,7 +12,7 @@ EFI Partition and Guidelines for my Mini-ITX Hackintosh
 - YESTON RX6800XT-16GD6
 - 2xWD Black SN750 1TB NVMe
 - USCORSAIR SF750W
-- Broadcom BCM943602CS WiFi/BT
+-  WiFi/BT：Intel Wi-Fi6 AX211（BCM943602CS - MacOS 13）
 
 ## Config
 
@@ -27,6 +27,10 @@ EFI Partition and Guidelines for my Mini-ITX Hackintosh
 - Above 4G decoding - Enabled
 - Intel（VMX）- Enabled
 - CFG Lock - Disabled
+
+## AirportItlwm
+
+- Only enabled in Sonoma, remove MinKernel 23.0.0 for other system versions [Problem feedback](https://github.com/OpenIntelWireless/itlwm/issues/883)
 
 <details>
 <summary><strong>EFI file content</strong></summary>
@@ -51,6 +55,7 @@ EFI
     │   └── ToggleSipEntry.efi
     ├── Kexts
     │   ├── AGPMInjector.kext
+    │   ├── AirportItlwm.kext
     │   ├── AppleALC.kext
     │   ├── CPUFriend.kext    
     │   ├── CPUFriendDataProvider.kext    -Disabled(HWP has been customized using SSDT and does not need to be enabled)
@@ -84,6 +89,8 @@ EFI
 ## Changelog
 
 ```
+
+0.2.1 - Add Sonoma's Intel Wi-Fi network card driver
 
 0.2.0 - Customized USB port
 
