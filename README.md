@@ -90,7 +90,7 @@ EFI
 
 ```
 
-0.2.1 - Adding Intel Network Card Driver for macOS14 [Problem feedback](https://github.com/OpenIntelWireless/itlwm/issues/883)
+0.2.1 - Adding Intel Network Card Driver for macOS14
 
 0.2.0 - Customized USB port
 
