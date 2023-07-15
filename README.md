@@ -30,7 +30,7 @@ EFI Partition and Guidelines for my Mini-ITX Hackintosh
 
 ## AirportItlwm
 
-- Only enabled in Sonoma, remove MinKernel 23.0.0 for other system versions [Problem feedback](https://github.com/OpenIntelWireless/itlwm/issues/883)
+- Only enabled in Sonoma, remove MinKernel 23.0.0 for other system versions [Problem feedback](https://github.com/OpenIntelWireless/itlwm/issues/896)
 
 <details>
 <summary><strong>EFI file content</strong></summary>
